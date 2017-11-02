@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/julienschmidt/httprouter"
 	"log"
 	"net/http"
 	"strings"
+
+	"github.com/julienschmidt/httprouter"
 )
 
 // Index the metadata API root
@@ -40,5 +41,5 @@ func main() {
 	router.GET("/:version/meta-data/:id", MetaDataContent)
 	router.GET("/:version/meta-data/:id/", MetaDataContent)
 
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":80", router))
 }
