@@ -8,7 +8,7 @@ test my `chef` provisioning in vagrant before actually deploy it as base auto sc
 When running on a testing vagrant VM, clone, then build and run the repo with:
 
 ```bash
-github.com/julienschmidt/httprouter
+go get github.com/julienschmidt/httprouter
 go build
 ./go-dummy-metadata
 ```
